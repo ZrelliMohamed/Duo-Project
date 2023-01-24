@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="style.css">
     <title>Bibliothéque</title>
 </head>
-<body onload="display()">
+<body>
     
 <div class="navbar">
     <center>
@@ -21,10 +21,11 @@
             <table>
                 <tr>
                     <td><li><a href="#">Home</a></li></td>
-                   <td><li><a href="AboutUs.html">About Us</a></li></td> 
+                   <td><li><a href="#">About Us</a></li></td> 
                    <td><li><a href="#content">Contact US</a></li></td> 
                    <td> <input  id="search" type="text"></td>
-                  
+                   <td id="btn-Filter">   <i class="fa-sharp fa-solid fa-magnifying-glass"></i>  </td>
+                   <td><i class="fa-solid fa-cart-shopping"></i></td>
                 </tr>
             </table>
           
@@ -38,7 +39,12 @@
 
 
   <div id="Container">
-      <!-- the container that will be contain our cards  -->
+    <div class='grid-product'><div><table id='cards-info'><td class='td-first'><img src="1.jpg" class='img-product'/></td><td><div class='td-last'> Price : UR budget </div><div class='td-last'> Athor : Shopping Book  </div><div class='td-last'> Type : Best Books Purchasing Experience  </div></td></table></div><div class='Description'>Zrelli Mohamed  </div><center><input type='button' value='U CANT BUY' class='btn-buy' ></center> </div>
+
+    <div class='grid-product'><div><table id='cards-info'><td class='td-first'><img src="https://media.licdn.com/dms/image/C560BAQGS7sdpNYWnEA/company-logo_200_200/0/1612902438159?e=2147483647&v=beta&t=w1NqDOjYxZIEsMXd2AQQF0IXHmoxmEuP3rYsKG_Vfdk" class='img-product'/></td><td><div class='td-last'> Price : UR budget </div><div class='td-last'> Athor : Shopping Book  </div><div class='td-last'> Type : Best Books Purchasing Experience  </div></td></table></div><div class='Description'>Yassine Lahbib </div><center><input type='button' value='U CANT BUY' class='btn-buy' ></center> </div>
+
+    <div class='grid-product'><div><table id='cards-info'><td class='td-first'><img src="https://media.licdn.com/dms/image/C560BAQGS7sdpNYWnEA/company-logo_200_200/0/1612902438159?e=2147483647&v=beta&t=w1NqDOjYxZIEsMXd2AQQF0IXHmoxmEuP3rYsKG_Vfdk" class='img-product'/></td><td><div class='td-last'> Price : UR budget </div><div class='td-last'> Athor : Shopping Book  </div><div class='td-last'> Type : Best Books Purchasing Experience  </div></td></table></div><div class='Description'>Yassine Lahbib </div><center><input type='button' value='U CANT BUY' class='btn-buy' ></center> </div>
+
   </div>
 
 <footer class="bg-dark text-center text-white" id="content">
