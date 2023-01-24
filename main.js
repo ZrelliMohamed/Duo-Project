@@ -91,12 +91,12 @@ var Base = [
 },
 ]
 // this code display ourr data  in our desgin of cards in the container
-function display(){
+
 var str=""
 for (var i = 0; i < Base.length; i++) {
-    str ="<div class='grid-product'><div><table id='cards-info'><td class='td-first'><img src='"+Base[i].src+"' class='img-product'/></td><td><div class='td-last'> Price : "+Base[i].Price+" DT</div><div class='td-last'> Athor : "+Base[i].Author+"</div><div class='td-last'> Type : "+Base[i].Type+"</div></td></table></div><div class='Description'>"+Base[i].description.slice(0,200)+"etc.</div><center><input type='button' value='BUY' class='btn-buy' ></center> </div>"
+    str ="<div class='grid-product'><div><table id='cards-info'><td class='td-first'><img src='"+Base[i].src+"' class='img-product'/></td><td><div class='td-last'> Price : "+Base[i].Price+" DT</div><div class='td-last'> Athor : "+Base[i].Author+"</div><div class='td-last'> Type : "+Base[i].Type+"</div></td></table></div><div class='Description'>"+Base[i].description.slice(0,200)+"etc.</div><center><input type='button' id='btn' value='BUY' class='btn-buy' ></center> </div>"
     $("#Container").append(str)
-}}
+}
 
 
 
@@ -118,7 +118,12 @@ $("#btn-Filter").on("click",function () {
 })
 $("#search").val("")
 })
-
+var k = 1
+$(".btn-buy").on("click",function () {
+  
+   $("#cart").attr("value",k)
+   k++
+})
 
 
 
